@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    tools:context=".ConsultaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="223dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INFO DOMINIOS"
+                android:textColor="#FFF"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="CONSULTAR DOMINIO"
+                android:textColor="#FFF"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="326dp"
+            android:layout_weight="0.2"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_marginTop="40dp"
+                android:id="@+id/host"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF">
+
+            </EditText>
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorPrimaryDark"
+                android:paddingHorizontal="25dp"
+                android:text="CONSULTAR"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="consultarDominio">
+
+            </Button>
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginHorizontal="30dp"
+                >
+
+                <TextView
+                    android:id="@+id/consulta_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textAlignment="textStart"
+                    android:textColor="#FFF"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
